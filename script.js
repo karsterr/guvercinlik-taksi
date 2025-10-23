@@ -265,32 +265,4 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Add custom cursor effect (optional)
-const cursor = document.createElement("div");
-cursor.classList.add("custom-cursor");
-document.body.appendChild(cursor);
-
-document.addEventListener("mousemove", (e) => {
-  cursor.style.left = e.clientX + "px";
-  cursor.style.top = e.clientY + "px";
-});
-
-// Add cursor CSS
-const cursorStyle = document.createElement("style");
-cursorStyle.textContent = `
-    .custom-cursor {
-        width: 20px;
-        height: 20px;
-        border: 2px solid var(--primary-yellow);
-        border-radius: 50%;
-        position: fixed;
-        pointer-events: none;
-        z-index: 9999;
-        transition: all 0.1s ease;
-        transform: translate(-50%, -50%);
-        mix-blend-mode: difference;
-    }
-`;
-document.head.appendChild(cursorStyle);
-
 console.log("Güvercinlik-Mumcular Taksi Durağı Web Sitesi Yüklendi! 🚕");
